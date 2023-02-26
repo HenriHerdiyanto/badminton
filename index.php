@@ -698,7 +698,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
+            <h4>GOR JAMBON</h4>
             <p>
               A108 Adam Street <br>
               New York, NY 535022<br>
@@ -711,11 +711,11 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Beranda</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Tentang Kami</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#service">Layanan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">Galery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
             </ul>
           </div>
 
@@ -731,8 +731,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            <h4>Follow Our Social Media</h4>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>

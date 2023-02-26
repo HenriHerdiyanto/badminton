@@ -68,6 +68,9 @@ if (!isset($_SESSION['username'])) {
                                 <th>No</th>
                                 <th>Nama Pemesan</th>
                                 <th>Nohp</th>
+                                <th>Tanggal Pesan</th>
+                                <th>Tanggal Main</th>
+                                <th>Jam Main</th>
                                 <th>Gambar</th>
                                 <th>Aksi</th>
                             </tr>
@@ -82,10 +85,13 @@ if (!isset($_SESSION['username'])) {
                                     <td><?php echo $no++; ?></td>
                                     <td><?php echo $data['nama']; ?></td>
                                     <td><?php echo $data['nohp']; ?></td>
+                                    <td><?php echo $data['tgl']; ?></td>
+                                    <td><?php echo $data['tgl_pesan']; ?></td>
+                                    <td><?php echo $data['jam']; ?></td>
                                     <td><img style="width: 100px;" src="../../image/<?php echo $data['gambar']; ?>"></td>
                                     <td>
-                                        <a style="width:72px; margin:3%;" href="edit.php?id=<?php echo $data['id']; ?>" class="btn btn-warning">Edit</a>
-                                        <a href="delete.php?id=<?php echo $data['id']; ?>" class="btn btn-danger">Hapus</a>
+                                        <!-- <a style="width:72px; margin:3%;" href="edit.php?id=<?php echo $data['id_pesanan']; ?>" class="btn btn-warning">Edit</a> -->
+                                        <a href="delete.php?id=<?php echo $data['id_pesanan']; ?>" class="btn btn-danger text-center">Hapus</a>
                                     </td>
                                 </tr>
                             <?php

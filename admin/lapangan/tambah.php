@@ -12,6 +12,7 @@ if (!isset($_SESSION['username'])) {
 if (isset($_POST['Submit'])) {
     $nama = mysqli_real_escape_string($conn, $_POST['nama']);
     $durasi = mysqli_real_escape_string($conn, $_POST['durasi']);
+    $tanggal = mysqli_real_escape_string($conn, $_POST['tanggal']);
     $status = mysqli_real_escape_string($conn, $_POST['status']);
     $harga = mysqli_real_escape_string($conn, $_POST['harga']);
     $filename = $_FILES['gambar']['name'];
@@ -44,7 +45,7 @@ if (isset($_POST['Submit'])) {
         move_uploaded_file($filetmpname, $folder . $filename);
 
         // MEMASUKAN DATA DATA + NAMA GAMBAR KE DALAM DATABASE
-        $result = mysqli_query($conn, "INSERT INTO lapangan(nama,durasi,status,harga,gambar) VALUES('$nama', '$durasi', '$status','$harga', '$filename')");
+        $result = mysqli_query($conn, "INSERT INTO lapangan(nama,durasi,tanggal,status,harga,gambar) VALUES('$nama', '$durasi','$tanggal', '$status','$harga', '$filename')");
 
         // MENAMPILKAN PESAN BERHASIL
         echo "<script>alert('Data berhasil disimpan.');window.location='index.php';</script>";
@@ -119,6 +120,10 @@ if (isset($_POST['Submit'])) {
                                     <option value="15.00-16.00">15.00-16.00</option>
                                 </select>
                             </td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal</td>
+                            <td><input class="form-control" type="date" name="tanggal" /></td>
                         </tr>
                         <tr>
                             <td>Status</td>

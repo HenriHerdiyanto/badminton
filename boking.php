@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
 include "koneksi.php";
 session_start();
 ?>
@@ -23,6 +26,7 @@ if (isset($_POST['Submit'])) {
   $nohp = mysqli_real_escape_string($conn, $_POST['nohp']);
   $tgl = mysqli_real_escape_string($conn, $_POST['tgl']);
   $tgl_pesan = mysqli_real_escape_string($conn, $_POST['tgl_pesan']);
+  $jam = mysqli_real_escape_string($conn, $_POST['durasi']);
   $filename = $_FILES['gambar']['name'];
 
   // CEK DATA TIDAK BOLEH KOSONG
@@ -53,7 +57,7 @@ if (isset($_POST['Submit'])) {
     move_uploaded_file($filetmpname, $folder . $filename);
 
     // MEMASUKAN DATA DATA + NAMA GAMBAR KE DALAM DATABASE
-    $result = mysqli_query($conn, "INSERT INTO pesanan(nama,nohp,tgl,tgl_pesan,gambar) VALUES('$nama', '$nohp', '$tgl','$tgl_pesan', '$filename')");
+    $result = mysqli_query($conn, "INSERT INTO pesanan(nama,nohp,tgl,tgl_pesan,jam,gambar) VALUES('$nama', '$nohp', '$tgl','$tgl_pesan','$jam', '$filename')");
 
     // MENAMPILKAN PESAN BERHASIL
     echo "<script>alert('Data berhasil disimpan.');window.location='detail-pesanan.php';</script>";
@@ -154,8 +158,17 @@ if (isset($_POST['Submit'])) {
                   <td><input class="form-control" type="date" name="tgl_pesan" required></td>
                 </tr>
                 <tr>
-                  <td>Tanggal Boking</td>
+                  <td>Tanggal Main</td>
                   <td><input class="form-control" type="date" name="tgl" required></td>
+                </tr>
+                <tr>
+                  <td>Jam Main</td>
+                  <td>
+                    <select class="form-select" name="durasi">
+                      <option selected>--- PILIH ---</option>
+                      <option value="<?php echo $durasi ?>"><?php echo $durasi ?></option>
+                    </select>
+                  </td>
                 </tr>
                 <tr>
                   <td>Bukti Transfer</td>

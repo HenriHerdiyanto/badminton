@@ -4,13 +4,15 @@ session_start();
 ?>
 <?php
 // AMBIL DATA BERDASARKAN ID
+// $result = mysqli_query($conn, "SELECT * FROM lapangan WHERE id_lapangan='$id'");
 $result = mysqli_query($conn, "SELECT * FROM pesanan");
 
 while ($res = mysqli_fetch_array($result)) {
     $nama = $res['nama'];
     $nohp = $res['nohp'];
-    $tgl_pesan = $res['tgl_pesan'];
     $tgl = $res['tgl'];
+    $tgl_pesan = $res['tgl_pesan'];
+    $jam = $res['jam'];
     $image = $res['gambar'];
 }
 ?>
@@ -99,6 +101,7 @@ while ($res = mysqli_fetch_array($result)) {
                             <p>Nama : <b><?php echo $nama ?></b> || No Hp : <b><?php echo $nohp ?></b></p>
                             <p></b></p>
                             <p>Tanggal Pesan : <b><?php echo $tgl_pesan ?></b> || Tanggal Main : <b><?php echo $tgl ?></b></p>
+                            <p>Jam Main : <b><?php echo $jam ?></b></p>
                             <p>Bukti Transfer <br> <b><img width="200" src="image/<?php echo $image ?>"></b></p>
                         </div>
                     </div>
