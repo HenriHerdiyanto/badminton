@@ -60,7 +60,7 @@ $result = mysqli_query($conn, "SELECT * FROM lapangan WHERE status='kosong'");
           <li><a class="nav-link   scrollto" href="index.php #portfolio">Galery</a></li>
           <li><a class="nav-link scrollto" href="index.php #team">Team</a></li>
           <li><a class="nav-link scrollto" href="index.php #contact">Kontak</a></li>
-          <li><a class="getstarted scrollto" href="#">Get Started</a></li>
+          <li><a class="getstarted scrollto" href="lapangan.php">Cek Lapangan</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -88,7 +88,7 @@ $result = mysqli_query($conn, "SELECT * FROM lapangan WHERE status='kosong'");
         <div class="row">
           <center>
             <?php
-            $query = mysqli_query($conn, "SELECT gambar FROM lapangan WHERE id_lapangan='7'");
+            $query = mysqli_query($conn, "SELECT gambar FROM lapangan LIMIT 1");
             while ($data = mysqli_fetch_array($query)) {
             ?>
               <img style="width: 500px; height:200px;" src="admin/lapangan/image/<?php echo $data['gambar'] ?>"><br>

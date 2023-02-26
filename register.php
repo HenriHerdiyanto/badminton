@@ -54,7 +54,7 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" type="text/css" href="assets/css/login.css">
     <link href="assets/img/logo png.png" rel="icon">
 
-    <title>Register | mytax</title>
+    <title>Register | Badminton</title>
 </head>
 
 <body>

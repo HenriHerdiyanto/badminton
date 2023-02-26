@@ -57,7 +57,7 @@ if (isset($_POST['Submit'])) {
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin | mytax</title>
+    <title>Admin | Badminton GOR JAMBON</title>
     <link href="../assets/img/logo png.png" rel="icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
@@ -72,27 +72,21 @@ if (isset($_POST['Submit'])) {
         <nav>
             <ul class="sidebar__nav">
                 <li>
-                    <a href="index.php" class="sidebar__nav__link">
+                    <a href="../index.php" class="sidebar__nav__link">
                         <i class="fa-solid fa-user"></i>
                         <span class="sidebar__nav__text">User</span>
                     </a>
                 </li>
                 <li>
-                    <a href="berita/berita.php" class="sidebar__nav__link">
+                    <a href="../pesanan/index.php" class="sidebar__nav__link">
                         <i class="fa-sharp fa-solid fa-newspaper"></i>
-                        <span class="sidebar__nav__text">Tambah Berita</span>
+                        <span class="sidebar__nav__text">Pemesan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="service/sevice.php" class="sidebar__nav__link">
+                    <a href="index.php" class="sidebar__nav__link">
                         <i class="fa-solid fa-file"></i>
                         <span class="sidebar__nav__text">Jadwal Lapangan</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="legal/index.php" class="sidebar__nav__link">
-                        <i class="fa-solid fa-file"></i>
-                        <span class="sidebar__nav__text">Tambah Legal Service</span>
                     </a>
                 </li>
                 <li>

@@ -22,7 +22,7 @@ while ($res = mysqli_fetch_array($result)) {
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Portfolio Details - Arsha Bootstrap Template</title>
+    <title>Badminton</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -58,13 +58,13 @@ while ($res = mysqli_fetch_array($result)) {
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link  active scrollto" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+                    <li><a class="nav-link scrollto " href="index.php ">Home</a></li>
+                    <li><a class="nav-link scrollto" href="index.php #about">About</a></li>
+                    <li><a class="nav-link scrollto" href="index.php #services">Services</a></li>
+                    <li><a class="nav-link  active scrollto" href="index.php #portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="index.php #team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="index.php #contact">Contact</a></li>
+                    <li><a class="getstarted scrollto" href="lapangan.php">Cek Lapangan</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -98,7 +98,7 @@ while ($res = mysqli_fetch_array($result)) {
                             <p>Selamat pesanan berhasil tersimpan <br> silahkan screenshoot halaman ini lalu tunjukan pada petugas lapangan agar anda bisa langsung bermain</p>
                             <p>Nama : <b><?php echo $nama ?></b> || No Hp : <b><?php echo $nohp ?></b></p>
                             <p></b></p>
-                            <p><b>Tanggal Pesan : <?php echo $tgl_pesan ?></b> || Tanggal Main : <b><?php echo $tgl ?></b></p>
+                            <p>Tanggal Pesan : <b><?php echo $tgl_pesan ?></b> || Tanggal Main : <b><?php echo $tgl ?></b></p>
                             <p>Bukti Transfer <br> <b><img width="200" src="image/<?php echo $image ?>"></b></p>
                         </div>
                     </div>
